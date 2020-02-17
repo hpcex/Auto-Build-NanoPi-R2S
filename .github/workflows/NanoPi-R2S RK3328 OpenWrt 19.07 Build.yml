@@ -3,10 +3,6 @@ name: NanoPi-R2S RK3328 OpenWrt 19.07 Build
 on:
   watch:
     types: [started]
-  # schedule:
-  #   - cron: 0 20 * * *
-  # 
-  #   types: [published]
 
 jobs:
 
