@@ -1,8 +1,8 @@
 name: NanoPi-R2S RK3328 OpenWrt 19.07 Build
 
 on:
-	release:
-	
+  watch:
+    types: [started]
   # schedule:
   #   - cron: 0 20 * * *
   # 
@@ -11,7 +11,7 @@ on:
 jobs:
 
   build:
-
+    if: github.event.repository.owner.id == github.event.sender.id
     runs-on: ubuntu-18.04
 
     steps:
